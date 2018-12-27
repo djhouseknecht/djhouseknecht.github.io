@@ -1,0 +1,10 @@
+@mixin custom-flex-display() {
+  @include media-breakpoint-up(lg) {
+    margin-left: 15%;
+    width: 70%;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-left: 20%;
+    width: 60%;
+  }
+}

@@ -1,0 +1,47 @@
+/* This file is used to override default bootstrap themes */
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700');
+
+/* place custom variables below here */
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-monospace: 'Roboto Mono', monospace;
+
+$navbar-height: 86px;
+// $navfooter-height: 48px;
+// $sidebar-width: 228px;
+
+$bold: 700;
+$white: #FFFFFF;
+
+$primary: #00e6e6;
+$secondary: #c2c2d6;
+
+
+$gray-0: #F8F8F8;
+$gray-1: #F3F3F3;
+$gray-2: #F1F1F1;
+$gray-3: #DADADA;
+$gray-4: #9B9B9B;
+$gray-5: #595959;
+$gray-6: #222222;
+// $success: $green-3;
+// $info: $blue-3;
+// $warning: $yellow-1;
+// $danger: $red-2;
+// $body-bg: $gray-1;
+// $body-color: $gray-5;
+// $input-border-color: $gray-3;
+
+$enable-rounded: false;
+
+$input-btn-padding-y: .5625rem;
+
+
+
+/* import bootstrap's functions, variables, and mixins - these can be used anywhere this file is imported */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import "~bootstrap/scss/mixins";

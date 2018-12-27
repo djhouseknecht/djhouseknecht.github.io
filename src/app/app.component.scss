@@ -1,0 +1,7 @@
+@import "../scss/themes";
+@import "../scss/mixins";
+
+div.custom-layout {
+  padding: 0 16px;
+  @include custom-flex-display();
+}

@@ -1,0 +1,34 @@
+@import "../../scss/themes";
+@import "../../scss/mixins";
+
+:host {
+  font-weight: $bold;
+  div.nav-container {
+    background-color: $primary;
+    width: 100%;
+    & > nav {
+      @include custom-flex-display();
+    }
+  }
+  a, a.navbar-brand {
+    color: $gray-2	  ;
+    cursor: pointer;
+    &:hover,
+    &.active {
+      color: $white;
+    }
+  }
+  .navbar-brand,
+  .navbar-nav li a {
+    font-size: 26px;
+    line-height: 86px;
+    height: 86px;
+    padding-top: 0;
+  }
+  .nav-item {
+    font-size: 20px;
+  }
+  .navbar-dark .navbar-toggler {
+    border-color: $gray-2;
+  }
+}
