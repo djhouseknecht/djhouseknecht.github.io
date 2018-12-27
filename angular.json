@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "djhouseknect": {
+    "djhouseknecht": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -80,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "djhouseknect:build"
+            "browserTarget": "djhouseknecht:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "djhouseknect:build:production"
+              "browserTarget": "djhouseknecht:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "djhouseknect:build"
+            "browserTarget": "djhouseknecht:build"
           }
         },
         "test": {
@@ -125,7 +125,7 @@
         }
       }
     },
-    "djhouseknect-e2e": {
+    "djhouseknecht-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -134,11 +134,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "djhouseknect:serve"
+            "devServerTarget": "djhouseknecht:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "djhouseknect:serve:production"
+              "devServerTarget": "djhouseknecht:serve:production"
             }
           }
         },
@@ -154,5 +154,5 @@
       }
     }
   },
-  "defaultProject": "djhouseknect"
+  "defaultProject": "djhouseknecht"
 }
