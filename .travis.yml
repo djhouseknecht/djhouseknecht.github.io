@@ -19,6 +19,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/djhouseknecht
+  local_dir: $TRAVIS_BUILD_DIR/dist/djhouseknecht
   on:
     branch: master
