@@ -14,6 +14,8 @@ before_script:
 
 script:
 - ng build --prod --base-href https://djhouseknecht.github.io/david-houseknecht/
+- ls $pwd
+- ls ./dist -R
 
 deploy:
   provider: pages
