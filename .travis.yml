@@ -14,3 +14,11 @@ before_script:
 
 script:
 - ng build --prod --base-href https://djhouseknecht.github.io/david-houseknecht/
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/djhouseknecht
+  on:
+    branch: master
