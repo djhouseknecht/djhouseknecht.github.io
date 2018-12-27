@@ -47,6 +47,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/scss/font-awesome-4.7.0/scss/font-awesome.scss",
               "src/scss/styles.scss"
             ],
             "scripts": []
