@@ -1,6 +1,8 @@
 @import "../../scss/themes";
 @import "../../scss/mixins";
 
+$navbar-height: 86px;
+
 :host {
   font-weight: $bold;
   div.nav-container {
@@ -21,8 +23,8 @@
   .navbar-brand,
   .navbar-nav li a {
     font-size: 24px;
-    line-height: 86px;
-    height: 86px;
+    line-height: $navbar-height;
+    height: $navbar-height;
     padding-top: 0;
   }
   .nav-item {
