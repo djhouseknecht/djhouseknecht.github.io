@@ -10,15 +10,9 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 $font-family-monospace: 'Roboto Mono', monospace;
 
 $navbar-height: 86px;
-// $navfooter-height: 48px;
-// $sidebar-width: 228px;
 
 $bold: 700;
 $white: #FFFFFF;
-
-$primary: #00e6e6;
-$secondary: #c2c2d6;
-
 
 $gray-0: #F8F8F8;
 $gray-1: #F3F3F3;
@@ -27,6 +21,16 @@ $gray-3: #DADADA;
 $gray-4: #9B9B9B;
 $gray-5: #595959;
 $gray-6: #222222;
+
+// $primary: #262626; // 15%
+// $primary: $gray-6;    // 13%
+$primary: #1a1a1a; // 10%
+// $primary: #0d0d0d; //  5%
+// $primary: #000000; //  0%
+
+// $secondary: #c2c2d6;
+$secondary: #00e6e6;
+
 // $success: $green-3;
 // $info: $blue-3;
 // $warning: $yellow-1;
