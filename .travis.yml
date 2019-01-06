@@ -21,4 +21,5 @@ deploy:
   github_token: $GITHUB_TOKEN
   local_dir: dist/djhouseknecht
   on:
-    branch: master
+    branch: git-pages-master
+  target-branch: master 
