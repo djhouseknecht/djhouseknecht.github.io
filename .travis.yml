@@ -7,7 +7,7 @@ sudo: required
 
 branches:
   only:
-  - master
+  - git-pages-master
 
 before_script:
   - npm install -g @angular/cli
