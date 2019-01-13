@@ -1,0 +1,10 @@
+@import "../../scss/themes";
+
+:host { 
+	height: 100%;
+	iframe { 
+		height: calc((100vh - #{$navbar-height}) - 24px - 16px);
+		margin-top: 16px;
+		width: 100%;
+	}
+}

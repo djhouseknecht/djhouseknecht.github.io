@@ -6,7 +6,7 @@ $navbar-height: 86px;
 :host {
   font-weight: $bold;
   div.nav-container {
-    background-color: $primary;
+		background-color: $primary;
     width: 100%;
     & > nav {
       @include custom-flex-display();
@@ -19,7 +19,7 @@ $navbar-height: 86px;
     &.active {
       color: $white;
     }
-  }
+	}
   .navbar-brand,
   .navbar-nav li a {
     font-size: 24px;
