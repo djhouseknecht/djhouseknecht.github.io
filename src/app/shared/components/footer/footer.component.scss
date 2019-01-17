@@ -1,0 +1,18 @@
+@import "../../../../scss/themes";
+@import "../../../../scss/mixins";
+
+:host { 
+	footer { 
+		background-color: $gray-0;
+		border-top: 1px solid $gray-2;
+		width: 100%;
+		padding: 60px 0;
+		margin-top: 24px;
+	}
+	div.footer-content { 
+		@include custom-flex-display();
+		padding: 0 16px;
+		text-align: center;
+	}
+
+}

@@ -6,12 +6,12 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+	{ path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
-  { path: '**', redirectTo: '' }
+  { path: '', component: HomeComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
