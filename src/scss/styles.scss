@@ -43,3 +43,10 @@ html, body {
   height: 100%;
   font-family: $font-family-sans-serif;
 }
+
+h2.underline { 
+	width: 50%;
+	padding-bottom: .9rem;
+	margin-bottom: .9rem;
+	border-bottom: 1px solid $gray-3;
+}
