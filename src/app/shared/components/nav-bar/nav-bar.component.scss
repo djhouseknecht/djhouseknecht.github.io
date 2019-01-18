@@ -8,9 +8,6 @@ $navbar-height: 86px;
   div.nav-container {
 		background-color: $primary;
     width: 100%;
-    & > nav {
-      @include custom-flex-display();
-    }
   }
   a, a.navbar-brand {
     color: $gray-2	  ;
