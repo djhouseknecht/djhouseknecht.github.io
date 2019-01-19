@@ -11,11 +11,12 @@
 		height: auto;
 	}
 	div { 
-		margin-top: 24px;
+		margin-top: 36px;
 	} 
 	.quote { 
 		font-size: 24px;
 		font-style: italic;
 		color: $gray-5;
+		align-self: center;
 	}
 }
