@@ -67,7 +67,27 @@
 	.brand { 
 		color: $white;
 		font-weight: $bold;
-		font-size: 24px;
+		font-size: 28px;
 		padding: 0 16px;
+		a.brand { padding: 0; }
+		div.smaller-text { 
+			display: block;
+			font-size: 20px;
+			div.separator { 
+				display: none;
+			}
+		}
+		/* desktop brand styles */
+		@media only screen and (min-width: 930px) { 
+			div.smaller-text { 
+				display: inline;
+				div.separator { 
+					display: inline;
+					padding: 0 .5rem;
+				}
+			}
+		}
 	}
+
+
 }
