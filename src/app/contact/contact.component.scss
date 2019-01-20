@@ -6,13 +6,20 @@
 	flex-direction: column;
 	div.contact-content { 
 		padding: 0 16px;
-		margin: 36px 0;
+		margin: 30px 0;
 	} 
 	iframe { 
 		min-height: 650px;
 		padding: 0 16px;
 		width: 100%;
 		@include media-breakpoint-down(xs) { 
+			padding: 0;
+		}
+	}
+
+	/* desktop styles */
+	@include media-breakpoint-up(md) {
+		div.contact-content { 
 			padding: 0;
 		}
 	}
