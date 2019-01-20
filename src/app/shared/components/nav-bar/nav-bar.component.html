@@ -1,20 +1,25 @@
-<div class="nav-container">
-
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary justify-content-between">
-		<a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active">
-			David Houseknecht<span style="font-size: 20px;"> <span class="px-2">|</span>Software Developer</span>
-		</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse flex-grow-0 text-right" id="navbarSupportedContent">
-      <a class="nav-item nav-link" [routerLink]="['/about']" routerLinkActive="active">About</a>
-      <a class="nav-item nav-link" [routerLink]="['/resume']" routerLinkActive="active">Resume</a>
-      <a class="nav-item nav-link" [routerLink]="['/contact']" routerLinkActive="active">Contact</a>
-      <a class="nav-item nav-link" href="https://www.linkedin.com/in/david-houseknecht/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-      <a class="nav-item nav-link" href="https://github.com/djhouseknecht" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-    </div>
-  </nav>
-
+<div class="brand">
+	David Houseknecht
 </div>
+<div>
+	<div class="d-block d-md-none">
+		<div #dropdownHamburger class="hamburger" (click)="collapsed = !collapsed">
+			<i class="fa fa-bars fa-custom" aria-hidden="true"></i>
+		</div>
+		<div #dropdownOptions class="dropdown-options" [ngClass]="{show: !collapsed}">
+			<ng-container *ngTemplateOutlet="navOptions"></ng-container>
+		</div>
+	</div>
+
+	<div class="d-none d-md-block">
+		<ng-container *ngTemplateOutlet="navOptions"></ng-container>
+	</div>
+</div>
+
+<ng-template #navOptions>
+	<a [routerLink]="['/about']" routerLinkActive="active" (click)="collapsed = true">About</a>
+	<a [routerLink]="['/resume']" routerLinkActive="active" (click)="collapsed = true">Resume</a>
+	<a [routerLink]="['/contact']" routerLinkActive="active" (click)="collapsed = true">Contact</a>
+	<a href="https://www.linkedin.com/in/david-houseknecht/" target="_blank" (click)="collapsed = true"><i class="fa fa-linkedin fa-lg"></i></a>
+	<a href="https://github.com/djhouseknecht" target="_blank" (click)="collapsed = true"><i class="fa fa-github fa-lg"></i></a>
+</ng-template>

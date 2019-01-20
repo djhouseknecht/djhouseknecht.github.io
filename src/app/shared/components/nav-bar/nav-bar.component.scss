@@ -1,33 +1,73 @@
 @import "../../../../scss/themes";
-@import "../../../../scss/mixins";
 
-$navbar-height: 86px;
+:host { 
+	/* nav-bar */
+	height: $navbar-height;
+	width: 100%;
+	background-color: $primary;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $white;
 
-:host {
-  font-weight: $bold;
-  div.nav-container {
-		background-color: $primary;
-    width: 100%;
-  }
-  a, a.navbar-brand {
-    color: $gray-2	  ;
-    cursor: pointer;
-    &:hover,
-    &.active {
-      color: $white;
-    }
+	/* links */
+	a { 
+		color: $gray-3;
+		font-size: 18px;
+		font-weight: $bold;
+		padding: 0 16px;
+		line-height: auto;
+		&.active, &:hover { 
+			color: $white;
+			text-decoration: none;
+		}
 	}
-  .navbar-brand,
-  .navbar-nav li a {
-    font-size: 24px;
-    line-height: $navbar-height;
-    height: $navbar-height;
-    padding-top: 0;
-  }
-  .nav-item {
-    font-size: 18px;
-  }
-  .navbar-dark .navbar-toggler {
-    border-color: $gray-2;
-  }
+
+	/* hamburger menu */
+	.fa-custom { font-size: 1.6rem;	}
+	.hamburger { 
+		border: 1px solid $gray-3;
+		margin: 0 16px;
+		padding: 9px 12px 6px;
+		color: $gray-3;
+		&:hover { 
+			cursor: pointer;
+			color: $white;
+			border: 1px solid $white;
+		}
+	}
+
+	/* dropdown-menu options */
+	.dropdown-options { 
+		height: 0;
+		display: none;
+
+		&.show { 
+			display: block;
+			position: absolute;
+			min-width: 184px;
+			width: auto;
+			height: auto;
+			background-color: $white;
+			border: 1px solid $gray-3;
+			right: 16px;
+			padding: 16px;
+			& > a { 
+				color: $primary;
+				display: block; 
+				padding: 8px 16px;
+				&.active, &:hover { 
+					color: $gray-5;
+				}
+			}
+		}
+	}
+
+	/* brand */
+	.brand { 
+		color: $white;
+		font-weight: $bold;
+		font-size: 24px;
+		padding: 0 16px;
+	}
 }
