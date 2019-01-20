@@ -1,22 +1,16 @@
 @import "../../scss/themes";
+@import "../../scss/mixins";
 
 :host { 
 	display: flex;
 	flex-direction: column;
 	padding: 0 16px;
+	@include mobile-padding();
 	div.resume-download {
 		display: flex;
 		flex-direction: column;
 		& > a { 
 			margin: 32px auto;
 		}
-	}
-	div { 
-		margin: 30px 0;
-	}
-
-	/* desktop styles */
-	@include media-breakpoint-up(md) { 
-		padding: 0;
 	}
 }
