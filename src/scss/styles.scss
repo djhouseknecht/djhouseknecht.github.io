@@ -45,17 +45,24 @@ html, body {
 	font-size: $font-size;
 }
 
-h2.underline { 
-	width: 50%;
-	padding-bottom: 1rem;
-	margin-bottom: 1.8rem;
-	border-bottom: 2px solid $gray-3;
-	@include media-breakpoint-down(xs) { 
-		margin-left: 25%;
-		text-align: center;
+/* style app header 2 */
+h2 { 
+	margin: 0;
+	text-align: center;
+	@include media-breakpoint-up(sm) { 
+		text-align: left;
+	}
+} 
+
+/* style spacer margin */
+app-spacer { 
+	margin: 1.5rem auto; 
+	@include media-breakpoint-up(sm) { 
+		margin: 1.5rem 0; 
 	}
 }
 
+/* clear paragraph margins */
 p { 
 	margin: 0;
 }

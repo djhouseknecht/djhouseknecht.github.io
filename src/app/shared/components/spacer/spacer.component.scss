@@ -1,0 +1,8 @@
+@import "../../../../scss/themes";
+
+:host { 
+	display: block;
+	height: auto;
+	border: 1px solid $gray-3;
+	width: 100%;
+}
