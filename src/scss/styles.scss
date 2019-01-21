@@ -46,7 +46,7 @@ html, body {
 }
 
 /* style app header 2 */
-h2 { 
+h2, h4 { 
 	margin: 0;
 	text-align: center;
 	@include media-breakpoint-up(sm) { 
