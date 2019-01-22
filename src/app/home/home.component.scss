@@ -21,6 +21,10 @@
 
 		& > a.item { 
 			justify-self: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
 			min-width: 290px;
 			width: 75%;
 			max-width: 450px;

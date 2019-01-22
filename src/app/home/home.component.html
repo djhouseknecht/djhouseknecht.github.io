@@ -4,23 +4,24 @@
 	<div class="mb-2">
 		My name is David Houseknecht and I am a Full Stack Developer 💻 Take a look around to get to know me a little bit.
 	</div>
+
 	<div class="standard-margin nav-menu">
 		<a class="item" [routerLink]="['/about']" routerLinkActive="active">
 			<div>Learn more about me and who I am as a developer.</div>
-			<i class="fa fa-info-circle fa-3x"></i>
+			<img src="/assets/info-icon.png" alt="info" height="50px" width="50px">
 		</a>
 
 		<a class="item" [routerLink]="['/resume']" routerLinkActive="active">
 			<div>Check out my experience and download my resume.</div>
-			<img src="/assets/resume-icon.png" alt="resume icon" height="60px" width="auto">
+			<img src="/assets/resume-icon.png" alt="resume" height="60px" width="60px" style="margin-bottom: 6px;">
 		</a>
 
 		<a class="item" [routerLink]="['/contact']" routerLinkActive="active">
 			<div>Contact me with any questions or opportunities.</div>
 			<i class="fa fa-envelope fa-3x"></i>
 		</a>
-
 	</div>
+
 </div>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -29,30 +30,37 @@
 		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="/assets/christmas-with-deanne-cropped.jpg" class="d-block w-100" alt="david and deanne">
+			<img src="/assets/christmas-with-deanne.jpg" class="d-block w-100" alt="david and deanne">
 			<div class="carousel-caption d-none d-md-block">
 				<h5>Christmas with my lovely wife, Deanne</h5>
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img src="/assets/graduation-with-trey-cropped.jpg" class="d-block w-100" alt="graduation">
+			<img src="/assets/graduation-with-trey.jpg" class="d-block w-100" alt="graduation">
 			<div class="carousel-caption d-none d-md-block">
 				<h5>Graduation day with my friend, Trey</h5>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<div class="carousel-caption d-none d-md-block">
-				<h5>Sharp Top of the Blue Ridge Mountains</h5>
+				<h5>Sharp Top in the Blue Ridge Mountains</h5>
 			</div>
-			<img src="/assets/hiking-sharp-top-cropped.jpg" class="d-block w-100" alt="hiking">
+			<img src="/assets/hiking-sharp-top.jpg" class="d-block w-100" alt="hiking">
 		</div>
 		<div class="carousel-item">
 			<img src="/assets/hangin-with-the-in-laws.jpg" class="d-block w-100" alt="hanging with the in-laws">
 			<div class="carousel-caption d-none d-md-block">
 				<h5>Downtown Lynchburg with some of my in-laws</h5>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="/assets/smoker-with-matt.jpg" class="d-block w-100" alt="smoking">
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Smoking a brisket with my brother-in-law</h5>
 			</div>
 		</div>
 	</div>
