@@ -6,11 +6,22 @@
 	flex-direction: column;
 	padding: 0 16px;
 	@include mobile-padding();
+
+	a:not(.btn) { 
+		text-decoration: underline;
+		&:visited { 
+			color: $gray-5;
+		}
+		&:hover { 
+			color: $gray-4;
+		}
+	}
+
 	div.resume-download {
 		display: flex;
 		flex-direction: column;
 		& > a { 
 			margin: 32px auto;
 		}
-	}
+	}	
 }

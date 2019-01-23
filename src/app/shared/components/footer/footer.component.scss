@@ -14,6 +14,9 @@
 		@include custom-flex-display();
 		padding: 0 16px;
 		text-align: center;
+		a { 
+			display: inline-block;
+		}
 	}
 	.extra-x-padding { 
 		padding-right: 1.5rem;
