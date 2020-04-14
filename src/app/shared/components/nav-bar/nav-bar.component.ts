@@ -10,8 +10,8 @@ export class NavBarComponent implements OnInit {
 	public collapsed: boolean = true;
 
 	/* handles to hamburger and dropdown-menu options */
-	@ViewChild('dropdownOptions') dropdownOptions: ElementRef;
-	@ViewChild('dropdownHamburger') dropdownHamburger: ElementRef;
+	@ViewChild('dropdownOptions', { static: true }) dropdownOptions: ElementRef;
+	@ViewChild('dropdownHamburger', { static: true }) dropdownHamburger: ElementRef;
 
 	/* event listener to close the dropdown-menu if clicked out of it */
   @HostListener('document:click', ['$event'])
