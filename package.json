@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "scully": "scully",
+    "scully:serve": "scully serve"
   },
   "private": true,
   "dependencies": {
@@ -16,10 +18,14 @@
     "@angular/compiler": "~9.1.1",
     "@angular/core": "~9.1.1",
     "@angular/forms": "~9.1.1",
+    "@angular/localize": "^9.1.1",
     "@angular/platform-browser": "~9.1.1",
     "@angular/platform-browser-dynamic": "~9.1.1",
     "@angular/router": "~9.1.1",
     "@ng-bootstrap/ng-bootstrap": "^6.0.2",
+    "@scullyio/init": "0.0.25",
+    "@scullyio/ng-lib": "latest",
+    "@scullyio/scully": "latest",
     "bootstrap": "^4.2.1",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.5",

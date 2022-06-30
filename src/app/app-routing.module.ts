@@ -6,11 +6,12 @@ import { ContactComponent } from './contact/contact.component';
 import { ResumeComponent } from './resume/resume.component';
 
 const routes: Routes = [
-	{ path: 'about', component: AboutComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'home', redirectTo: '', pathMatch: 'full' },
-  { path: '', component: HomeComponent },
+  // { path: '', component: HomeComponent },
+  { path: '', loadChildren: () => import('./saw/saw.module').then(m => m.SawModule) },
   { path: '**', redirectTo: '/' }
 ];
 
